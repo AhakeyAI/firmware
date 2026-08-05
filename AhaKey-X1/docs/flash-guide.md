@@ -20,18 +20,14 @@
 
 下载后安装并打开 WCHISPTool。
 
-## 第 2 步：下载 HEX
+## 第 2 步：从 GitHub Releases 下载 HEX
 
-- 普通用户优先下载 `v1.1.0`。
-- `v1.1.0` 是目前出厂会烧录的固件，也是当前推荐版本。
-- `v1.0.0` 是之前的老版本，只在需要回到旧版行为时使用。
+| 版本 | 口径 | 下载 |
+|---|---|---|
+| v1.1.0 | 目前出厂会烧录的固件 / 当前推荐版本 | [AhaKey X1 Firmware v1.1.0](https://github.com/AhakeyAI/firmware/releases/tag/AhaKey-X1-v1.1.0) |
+| v1.0.0 | 之前的老版本 | [AhaKey X1 Firmware v1.0.0](https://github.com/AhakeyAI/firmware/releases#release-AhaKey-X1-v1.0.0) |
 
-下载入口：
-
-| 版本 | HEX |
-|---|---|
-| v1.1.0 | [../releases/v1.1.0/AhaKey-X1-firmware-v1.1.0.hex](../releases/v1.1.0/AhaKey-X1-firmware-v1.1.0.hex) |
-| v1.0.0 | [../releases/v1.0.0/AhaKey-X1-firmware-v1.0.0.hex](../releases/v1.0.0/AhaKey-X1-firmware-v1.0.0.hex) |
+普通用户优先下载 `v1.1.0`。只有需要回到之前老版本行为时，才选择 `v1.0.0`。
 
 ## 第 3 步：进入烧录模式
 
@@ -39,13 +35,15 @@
 2. 打开 WCHISPTool。
 3. 按住键盘语音键。
 4. 保持按住语音键，同时插入 Type-C。
-5. WCHISPTool 识别设备后选择 HEX 文件。
+5. 等待 WCHISPTool 识别设备。
 
 如果 WCHISPTool 没有识别设备，请确认 Type-C 线支持数据传输，然后换一个 USB 口重试。
 
 ## 第 4 步：选择 HEX 并点击 Download
 
-在 WCHISPTool 中点击 `...`，选择刚下载的 `.hex` 文件，然后点击 `Download` 开始烧录。
+1. 在 WCHISPTool 中点击 `...`。
+2. 选择刚从 GitHub Releases 下载的 `.hex` 文件。
+3. 点击 `Download` 开始烧录。
 
 烧录时不要拔掉 Type-C 数据线，也不要关闭 WCHISPTool。
 
@@ -59,35 +57,41 @@
 4. 打开 AhaKey 客户端并重新连接设备。
 5. 测试按键、蓝牙连接和客户端识别是否正常。
 
+## 视频教程
+
+> 视频教程正在重新整理中。
+> 当前请先参考本文图文步骤完成烧录。
+> 后续我们会补入 B 站 / YouTube / 官网教程链接。
+
 ## 常见问题
 
-### WCHISPTool 没有识别设备
+### WCHISP 没有弹出选择固件窗口
 
 - 确认键盘已经关机。
 - 确认是先按住语音键，再插入 Type-C。
 - 确认 Type-C 线支持数据传输，不是只能充电的线。
 - 换一个 USB 口后重试。
 
-### 烧录完成后蓝牙连不上
+### 电脑识别不到设备
+
+- 换一根支持数据传输的 Type-C 线。
+- 换一个电脑 USB 口。
+- 关闭 WCHISPTool 后重新打开。
+- 重新按住语音键并插入 Type-C。
+
+### 烧录完成后蓝牙无法连接
 
 - 在系统蓝牙设置里删除旧的 AhaKey 配对记录。
 - 重新开关键盘。
 - 重新搜索并连接 AhaKey X1。
-- 打开 AhaKey 客户端重新连接设备。
 
-### 视频教程 404 怎么办？
+### 烧录后 AhaKey 客户端无法连接
 
-如果旧的视频教程链接显示 404，请先按本页面的文字步骤操作。
+- 确认系统蓝牙已经连接 AhaKey X1。
+- 关闭并重新打开 AhaKey 客户端。
+- 在客户端中重新搜索设备。
+- 如果仍然无法连接，重新开关键盘后再试。
 
-临时处理方式：
+### 不确定该烧录哪个版本
 
-- 不再依赖旧的视频链接作为唯一教程入口。
-- 以本仓库的 `AhaKey-X1/docs/flash-guide.md` 作为当前正式教程。
-- 后续如果重新上传视频，应在本页面补充新的可访问链接。
-- 对外分享教程时，优先分享本页面链接，而不是旧的视频链接。
-
-## GitHub Releases 和仓库目录的关系
-
-1. 仓库内目录，例如 `AhaKey-X1/releases/v1.1.0/`，用于长期保存该版本的 HEX、README、SHA256SUMS.txt。
-2. [GitHub Releases](https://github.com/AhakeyAI/firmware/releases) 用于对外展示版本更新、提供下载入口和发布说明。
-3. 每个正式版本应该尽量两边都有：仓库目录里有对应文件，GitHub Releases 里有对应 tag / release，仓库目录 README 链接到 GitHub Release，GitHub Release 描述里链接回仓库目录。
+优先选择 `v1.1.0`。这是目前出厂会烧录的固件 / 当前推荐版本。
