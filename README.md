@@ -9,17 +9,16 @@
 | v1.1.0 | 目前出厂会烧录的固件 / 当前推荐版本 | 普通用户优先下载这个 | [AhaKey X1 Firmware v1.1.0](https://github.com/AhakeyAI/firmware/releases/tag/AhaKey-X1-v1.1.0) |
 | v1.0.0 | 之前的老版本 | 需要回到旧版行为时使用 | [AhaKey X1 Firmware v1.0.0](https://github.com/AhakeyAI/firmware/releases#release-AhaKey-X1-v1.0.0) |
 
-## 快速烧录步骤
+## 烧录教程
 
-1. 从 GitHub Releases 下载对应版本的 `.hex` 文件。
-2. 下载并打开 WCHISPTool。
-3. 让键盘关机。
-4. 按住语音键，同时插入 Type-C。
-5. 在 WCHISPTool 中选择 `.hex` 文件。
-6. 点击 Download。
-7. 烧录完成后重新连接蓝牙和 AhaKey 客户端。
+- Windows 图形化烧录：[AhaKey-X1/docs/flash-guide.md](AhaKey-X1/docs/flash-guide.md)
+- macOS 命令行烧录：[AhaKey-X1/docs/flash-guide-macos.md](AhaKey-X1/docs/flash-guide-macos.md)
 
-详细教程：[AhaKey-X1/docs/flash-guide.md](AhaKey-X1/docs/flash-guide.md)
+## 快速选择
+
+- 使用 Windows，并且希望图形化操作：看 Windows 烧录教程，使用 WCHISPTool。
+- 使用 macOS，只需要烧录已有 HEX：看 macOS 烧录教程中的“烧录已有 HEX”，使用 `wchisp`。
+- 使用 macOS，还要从源码编译：看 macOS 烧录教程中的“在 Mac 上编译固件”。
 
 ## License
 
