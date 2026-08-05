@@ -10,7 +10,7 @@
 
 <video src="assets/flash-demo.mp4" controls width="100%"></video>
 
-如果浏览器没有直接显示视频，可以打开或下载：[assets/flash-demo.mp4](assets/flash-demo.mp4)。
+如果浏览器没有直接显示视频，可以直接下载这个6.7MB的视频：[assets/flash-demo.mp4](assets/flash-demo.mp4)。
 
 ## 准备材料
 
