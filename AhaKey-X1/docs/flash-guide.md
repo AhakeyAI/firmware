@@ -4,6 +4,14 @@
 
 本教程适用于 AhaKey X1 官方 HEX 固件的烧录、升级和回退。
 
+## 视频教程
+
+可以先看完整视频，再按下面的图文步骤操作。
+
+<video src="assets/flash-demo.mp4" controls width="100%"></video>
+
+如果浏览器没有直接显示视频，可以打开或下载：[assets/flash-demo.mp4](assets/flash-demo.mp4)。
+
 ## 准备材料
 
 - AhaKey X1
@@ -86,12 +94,6 @@
 3. 重新连接 AhaKey X1 蓝牙。
 4. 打开 AhaKey 客户端并重新连接设备。
 5. 测试按键、蓝牙连接和客户端识别是否正常。
-
-## 视频教程
-
-> 视频教程正在重新整理中。
-> 当前请先参考本文图文步骤完成烧录。
-> 后续我们会补入 B 站 / YouTube / 官网教程链接。
 
 ## 常见问题
 
