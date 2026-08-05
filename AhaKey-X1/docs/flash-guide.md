@@ -39,15 +39,45 @@
 
 如果 WCHISPTool 没有识别设备，请确认 Type-C 线支持数据传输，然后换一个 USB 口重试。
 
-## 第 4 步：选择 HEX 并点击 Download
+## 第 4 步：选择 HEX
 
-1. 在 WCHISPTool 中点击 `...`。
-2. 选择刚从 GitHub Releases 下载的 `.hex` 文件。
-3. 点击 `Download` 开始烧录。
+在 WCHISPTool 的“下载文件”区域中，选择一个“目标程序文件”位置，点击右侧的 `...`，选择刚从 GitHub Releases 下载的 `.hex` 文件。
+
+选择完成后，只勾选当前要烧录的那一行 HEX。不要同时勾选多个不相关的 HEX。
+
+![选择 HEX 文件](assets/flash-step-4-select-hex.png)
+
+## 第 5 步：确认下载配置
+
+选择 HEX 后，请确认“下载配置”区域的选项。推荐按下图保持：
+
+- 下载波特率：`115200`
+- 下载配置脚：`PB22`
+- 勾选“串口免按键下载功能”
+- 勾选“下载完成后运行目标程序”
+- 勾选“清空DataFlash”
+- 勾选“清空CodeFlash”
+- 不勾选“使能RST作为手工复位输入引脚”
+
+如果 WCHISPTool 中“启用代码和数据保护模式”显示为灰色不可修改，可以保持默认状态。
+
+![确认下载配置](assets/flash-step-5-download-options.png)
+
+## 第 6 步：点击 Download
+
+确认 HEX 和下载配置后，点击窗口下方的“下载”按钮开始烧录。
 
 烧录时不要拔掉 Type-C 数据线，也不要关闭 WCHISPTool。
 
-## 第 5 步：烧录完成后重新连接
+![点击 Download](assets/flash-step-6-click-download.png)
+
+## 第 7 步：确认烧录成功
+
+烧录完成后，右侧“下载记录”区域会出现“成功!”字样，并显示本次用时。
+
+![烧录成功](assets/flash-step-7-download-success.png)
+
+## 第 8 步：烧录完成后重新连接
 
 烧录完成后：
 
