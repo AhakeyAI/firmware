@@ -9,7 +9,7 @@
 | v1.1.0 | 目前出厂会烧录的固件 / 当前推荐版本 | 普通用户优先下载这个 | [AhaKey X1 Firmware v1.1.0](https://github.com/AhakeyAI/firmware/releases/tag/AhaKey-X1-v1.1.0) |
 | v1.0.0 | 之前的老版本 | 需要回到旧版行为时使用 | [AhaKey X1 Firmware v1.0.0](https://github.com/AhakeyAI/firmware/releases#release-AhaKey-X1-v1.0.0) |
 
-## 烧录教程
+## 烧录教程（推荐windows烧录，mac烧录环境太复杂（可以让ai读这个文件来搞））
 
 - Windows 图形化烧录：[AhaKey-X1/docs/flash-guide.md](AhaKey-X1/docs/flash-guide.md)
 - macOS 命令行烧录：[AhaKey-X1/docs/flash-guide-macos.md](AhaKey-X1/docs/flash-guide-macos.md)
